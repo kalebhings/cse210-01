@@ -8,5 +8,9 @@ namespace cse210_01
         {
             Console.WriteLine("Hello World!");
         }
+        static void create_board(string[] args)
+        {
+          
+        }
     }
 }
