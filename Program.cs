@@ -20,6 +20,9 @@ namespace cse210_01
                 /* initial player */
                 playerTurn = newTurn(playerTurn);
 
+                /* Instructions */
+                startGame(playerTurn);
+
                 /* creates board */
                 displayBoard(boardSlot);
 
@@ -27,6 +30,15 @@ namespace cse210_01
            } while (game.Equals(0));
         }
 
+        static void startGame(int playerNumber)
+        {
+            Console.WriteLine("Player 1: X");
+            Console.WriteLine("Player 2: O");
+            Console.WriteLine("");
+
+            Console.WriteLine($"Player {playerNumber} to move, select 1 through 9 from the game board");
+            Console.WriteLine("");
+        }
 
         static void displayBoard(char[] boardSlot)
         {
